@@ -25,7 +25,7 @@ decodeButton.addEventListener("click", () => {
 });
 
 // Start of the cipher code
-var alphabet = "abcdefghijklmnopqrstuvwxyz"; // Create a new variable that holds the alphabet
+var alphabet = "abcdefghijklmnopqrstuvwxyz!#$%&'()*+-./:;<=>?@[\]^_{|}~ 1234567890"; // Create a new variable that holds the alphabet
 var newalpha = ""; // Create another variable for a new alphabet and keep it empty
 
 // The shift function takes an integer n and creates a shifted alphabet (newalpha).
@@ -52,10 +52,7 @@ function encodeFunc(message) {
     if (alphabet.includes(char)) {
       let index = alphabet.indexOf(char);
       result += newalpha[index];
-    } else {
-      // If the character is not alphabetic, keep it unchanged
-      result += char;
-    }
+    } 
   }
   return result;
 }
@@ -71,9 +68,6 @@ function decodeFunc(message) {
     if (alphabet.includes(char)) {
       let index = newalpha.indexOf(char);
       result += alphabet[index];
-    } else {
-      // If the character is not alphabetic, keep it unchanged
-      result += char;
     }
   }
   return result;
