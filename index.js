@@ -25,7 +25,7 @@ decodeButton.addEventListener("click", () => {
 });
 
 // Start of the cipher code
-var alphabet = "abcdefghijklmnopqrstuvwxyz!#$%&'()*+-./:;<=>?@[\]^_{|}~ 1234567890"; // Create a new variable that holds the alphabet
+var alphabet = "abcdefghijklmnopqrstuvwxyz!#$%&'()*+-./:;<=>?@[\\]^_{|}~ 1234567890\""; // Create a new variable that holds the alphabet
 var newalpha = ""; // Create another variable for a new alphabet and keep it empty
 
 // The shift function takes an integer n and creates a shifted alphabet (newalpha).
