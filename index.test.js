@@ -29,6 +29,6 @@ test("Should return encoded message when passed a simple string.", () => {
 });
 
 test("Should return decoded message when passed a simple string.", () => {
-    expect(decodeFunc("bcd", shift(1))).toBe("abc");
+    expect(decodeFunc("cggj", shift(1000))).toBe("hllo");
   });
 
